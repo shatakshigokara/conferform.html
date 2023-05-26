@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participant Details</title>
+    <style>
+        .title{
+            font-family:'Times New Roman', Times, serif;
+            font-size: x-large;
+            background-color: rgb(197, 241, 227);
+            height: fit-content;
+            width: 1350px;
+            text-align:center;     
+            }
+        table, td {  
+          border: 3px solid rgb(10, 9, 9);
+          text-align: left;
+        }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+td {
+    height: 50px;
+}
+body{
+  background-color: antiquewhite;
+}
+.button{
+  background-color: black;
+  color:white;
+  text-align: center;
+}
+        
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1><i>ENTRY FORM</i></h1>
+    </div>
+        <table style="width:100%">
+                <tr>
+                  <td><label for="fName">FirstName:</label>
+                  <input type="text"></td>
+                  <td><label for="eMail">Email:</label>
+                  <input type="email"></td>
+                  <td><label for="affiliate">Affiliate:</label>
+                  <input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Diet:</label>
+                    <div class="diet">
+                              <input type="checkbox"><label for="veggie">Vegetarian</label><br>
+                              <input type="checkbox"><label for="nonveggie">Non-Vegetarian</label><br>
+                              <input type="checkbox"><label for="any">No Preference</label></div></td>
+                    
+                    <td><label for="domains">Domains</label>
+                      
+                      <select name="domains">
+                        <option value="0">select</option>
+                        <option value="1">Full Stack</option>
+                        <option value="2">Artificial Intelligence</option>
+                        <option value="3">Cloud Computing</option>
+                        <option value="4">Data Science</option></select>
+                    </td>
+                    <td>
+                      <label for="types">Types:</label>
+                      <div class="form"></div>
+                      <form>
+                      <input type="radio" id="vip" name="typ" value="category">
+                      <label for="vip">VIP</label>
+                      <input type="radio" id="css" name="typ" value="category">
+                      <label for="gen">General</label>
+                      <input type="radio" id="javascript" name="typ" value="category">
+                      <label for="student">Student</label>
+                    </form></div>
+                     </td>
+                  </tr>
+                  <tr>
+                    <td><label for="gender">Gender:</label>
+                      <select name="gender">
+                        <option value="0">select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Others</option></select>
+                        </td>
+                    <td>
+                      <div class="date">
+                        <form>
+                        <label for="date">DOB:</label>
+                        <input type="date" name="birthday">
+                      </form>
+                      </div>
+                    </td>
+                    <td><label for="hg">Highest Graduation:</label>
+                      
+                      <select name="hg">
+                        <option value="0">select</option>
+                        <option value="1">Post Graduate</option>
+                        <option value="2">Under Graduate</option>
+                        </select></td>
+                  </tr>
+                  <tr>
+                    <td><form>
+                      <label for="pNumber">Phonenumber:</label>
+                      <input type="phonenumber">
+                    </form></td>
+                    <td><form>
+                      <label for="pass">New Password:</label>
+                      <input type="password">
+                    </form></td>
+                    <td><form>
+                      <label for="pass">Confirm Password:</label>
+                      <input type="password">
+                    </form></td>
+                  </tr>
+        </table>
+        <div class="button">
+          <button>Register</button>
+        </div>
+</body>
+</html>
